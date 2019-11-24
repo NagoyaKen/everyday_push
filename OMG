@@ -1,0 +1,11 @@
+a = int(input())
+b = input()
+c = len(b)
+s = [chr(ord('a') + i) for i in range(26)]
+d = 0
+t = []
+for i in b:
+  d = chr(ord(i) + a)
+  t.append(d)
+t = ''.join(t)
+print(t)
