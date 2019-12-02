@@ -1,0 +1,1 @@
+print(b.split()[a])
