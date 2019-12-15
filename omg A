@@ -1,0 +1,30 @@
+import itertools
+
+def main():
+
+    a = int(input())
+    b = []
+    c = []
+    l = []
+    
+    for i in range(a):
+        l.append(int(input()))
+    
+    
+    for i, _ in enumerate(l, 1):
+        for j in itertools.permutations(l, r=(i - 1)):
+            b.append(j)
+            
+    for i in b:
+        d = sum(i)
+        c.append(d)
+    c.append(0)
+    c.append(100)
+    c = sorted(set(c))
+    d = len(c)
+    print(d)
+    for i in c:
+        print(i)
+        
+if __name__ == '__main__':
+    main()
