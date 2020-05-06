@@ -1,4 +1,6 @@
 <h2>Code after experimentation</h2>
+競技プログラミングや何かで使ったコードの放置場
+
 Enjoying
 たのしー
 
