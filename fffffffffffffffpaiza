@@ -1,0 +1,18 @@
+# coding: utf-8
+# Your code here!
+import datetime
+
+a,b,c = map(int, input().split())
+d = []
+N = int(input())
+for i in range(N):
+    e = input().replace(' ',':')
+    d.append(datetime.datetime.strptime(e,'%H:%M'))
+    
+d.reverse()
+for i in d:
+    g = i - datetime.datetime.strptime(str(a),'%M')
+    if g < datetime.datetime.strptime('8:00','%H:%M'):
+        break
+    
+print(g)
